@@ -1,8 +1,10 @@
-# Create MDX Powered Blog in Next.js With One Script
+# Create MDX Powered Blog in Next.js With One Script (10-20 seconds)
 
 ![Mdx Blog Next.js](https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/1.png)
 
 This script automates the process of setting up a mdx based blog section in a new Next.js site. It installs necessary packages, configures the project, and creates sample blog posts.
+
+**The whole process takes something around 10-20 seconds(mostly waiting for npm packages to install) and you are ready to go**.
 
 ## Why make this script?
 
