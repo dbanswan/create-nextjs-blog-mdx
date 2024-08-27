@@ -126,3 +126,29 @@ Why did chicken cross the road?. I finally found the answer.
 ```
 
 That's it! Your new blog post will be automatically added to the blog listing page. Please note slug is generated from the file name. So, saving the file as `my-new-blog-post.mdx` will generate a slug of `my-new-blog-post`.
+
+## Visual Guide
+
+Once you run the script and run the development server, you will see a blog link in the top left navigation bar.
+
+![Mdx Blog Next.js](https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/1.png)
+
+On clicking the blog link, you will see the sample blog posts.
+
+![Mdx Blog Next.js](https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/2.png)
+
+Sample Blog Post
+
+![Mdx Blog Next.js](https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/3.png)
+
+## Mobile View
+
+<img src="https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/4.png" alt="Mdx Blog Next.js" width="200"/>
+
+<img src="https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/5.png" alt="Mdx Blog Next.js" width="200"/>
+
+<img src="https://raw.githubusercontent.com/dbanswan/create-nextjs-blog-mdx/main/sample-images/6.png" alt="Mdx Blog Next.js" width="200"/>
+
+## Conclusion
+
+I do believe there are/can be different ways to achieve the same thing in a more efficient manner. That's the thing with code. But this works for me and I hope it works for you too.
