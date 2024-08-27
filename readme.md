@@ -103,3 +103,24 @@ If you have a different setup, you can always modify the script to suit your nee
    npm run dev
    ```
 5. Visit `http://localhost:3000/blog` to see the sample blog posts.
+
+## How do I create a new blog post?
+
+1. Create a new `.mdx` file in the `content` directory.
+
+2. Add the following front matter to the file and write your blog post content:
+
+```mdx
+---
+title: "My New Blog Post"
+description: "This is a sample blog post."
+date: "2024-07-07"
+category: "Personal"
+---
+
+# Sample Blog Post
+
+Why did chicken cross the road?. I finally found the answer.
+```
+
+That's it! Your new blog post will be automatically added to the blog listing page. Please note slug is generated from the file name. So, saving the file as `my-new-blog-post.mdx` will generate a slug of `my-new-blog-post`.
