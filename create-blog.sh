@@ -195,19 +195,22 @@ const blogContentDirectory = "content";
 export async function getStaticProps() {
   const files = fs.readdirSync(process.cwd() + "/" + blogContentDirectory);
 
-  const posts = files.map((filename) => ({
-    slug: filename.replace(".mdx", ""),
-
-    title: filename.replace(".mdx", "").replace(/-/g, " "),
-
-    date: matter(
+  const posts = files.map((filename) => {
+    const postMatter = matter(
       fs.readFileSync(blogContentDirectory + "/" + filename)
-    ).data.date.toString(),
+    );
 
-    category: matter(fs.readFileSync(blogContentDirectory + "/" + filename))
-      .data.category,
-  }));
+    const post = {
+      slug: filename.replace(".mdx", ""),
+      title: filename.replace(".mdx", "").replace(/-/g, " "),
+      date: postMatter.data.date.toString(),
+      category: postMatter.data.category,
+    };
 
+    return post;
+  });
+
+ 
   return {
     props: {
       posts,
