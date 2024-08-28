@@ -56,41 +56,6 @@ If you have a different setup, you can always modify the script to suit your nee
 
 ### The styling is kept at a minimum, as that is a personal choice. Modify as per your needs.
 
-## Steps Performed by the Script
-
-1. **Install Necessary npm Packages**
-
-   - Installs `@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`, `@types/mdx`, `@tailwindcss/typography`, `gray-matter`, and `next-mdx-remote`.
-
-2. **Update `tailwind.config.js`**
-
-   - Replaces `plugins: []` with `plugins: [require("@tailwindcss/typography")]`.
-
-3. **Rename `next.config.js` to `next.config.mjs`**
-
-   - Renames the configuration file and updates its content to support MDX.
-
-4. **Create Content Directory and Sample Blog Posts**
-
-   - Creates a `content` directory and adds sample `.mdx` blog posts.
-
-5. **Create Components Directory and `mdx-layout.jsx` File**
-
-   - Creates a `components` directory and adds an MDX layout component.
-
-6. **Create Blog Pages**
-
-   - Creates `pages/blog` directory and adds `index.js` for listing blog posts.
-   - Creates `pages/blog/[slug]` directory and adds `index.js` for individual blog posts.
-
-7. **Modify Global CSS**
-
-   - Appends custom styles to `app/globals.css`.
-
-8. **Modify `app/page.js`**
-   - Adds an import statement for `next/link` if it doesn't exist.
-   - Replaces a specific `<p>` element with a `<div>` element containing a link to the blog.
-
 ## Usage
 
 1. Place the `create-blog.sh` script in the root of your Next.js project.
@@ -128,6 +93,41 @@ Why did chicken cross the road?. I finally found the answer.
 ```
 
 That's it! Your new blog post will be automatically added to the blog listing page. Please note slug is generated from the file name. So, saving the file as `my-new-blog-post.mdx` will generate a slug of `my-new-blog-post`.
+
+## Steps Performed by the Script
+
+1. **Install Necessary npm Packages**
+
+   - Installs `@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`, `@types/mdx`, `@tailwindcss/typography`, `gray-matter`, and `next-mdx-remote`.
+
+2. **Update `tailwind.config.js`**
+
+   - Replaces `plugins: []` with `plugins: [require("@tailwindcss/typography")]`.
+
+3. **Rename `next.config.js` to `next.config.mjs`**
+
+   - Renames the configuration file and updates its content to support MDX.
+
+4. **Create Content Directory and Sample Blog Posts**
+
+   - Creates a `content` directory and adds sample `.mdx` blog posts.
+
+5. **Create Components Directory and `mdx-layout.jsx` File**
+
+   - Creates a `components` directory and adds an MDX layout component.
+
+6. **Create Blog Pages**
+
+   - Creates `pages/blog` directory and adds `index.js` for listing blog posts.
+   - Creates `pages/blog/[slug]` directory and adds `index.js` for individual blog posts.
+
+7. **Modify Global CSS**
+
+   - Appends custom styles to `app/globals.css`.
+
+8. **Modify `app/page.js`**
+   - Adds an import statement for `next/link` if it doesn't exist.
+   - Replaces a specific `<p>` element with a `<div>` element containing a link to the blog.
 
 ## Visual Guide
 
